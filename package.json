@@ -15,9 +15,9 @@
     "@react-native-async-storage/async-storage": "2.2.0",
     "@react-native-community/datetimepicker": "8.4.4",
     "babel-preset-expo": "~54.0.10",
-    "expo": "^54.0.0",
+    "expo": "~54.0.36",
     "expo-constants": "~18.0.13",
-    "expo-notifications": "~0.32.16",
+    "expo-notifications": "~0.32.17",
     "expo-status-bar": "~3.0.9",
     "lucide-react-native": "0.542.0",
     "react": "19.1.0",
@@ -29,6 +29,20 @@
   },
   "devDependencies": {
     "@babel/core": "^7.25.2"
+  },
+  "overrides": {
+    "@expo/metro-config": {
+      "postcss": "8.5.25"
+    },
+    "metro": {
+      "ws": "7.5.11"
+    },
+    "react-devtools-core": {
+      "ws": "7.5.11"
+    },
+    "xcode": {
+      "uuid": "11.1.1"
+    }
   },
   "engines": {
     "node": ">=20 <24"
